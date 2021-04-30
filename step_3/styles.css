@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  background-color: #16A085;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 600px;
+  background-color: #fff;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 50px;
+  padding-bottom: 170px;
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.wrapper::before {
+  content: "";
+  width: 500px;
+  height: 500px;
+  background-image: url(./img/bicycle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 200px;
+  display: inline-block;
+}
+
+span {
+  margin-left: auto;
+  color: #0A0705;
+}
+
+p {
+  color: #B4BBC0;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+h3 {
+  color: #969086;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+h2 {
+  display: flex;
+  color: #676767;
+}
+
+/* .container {
+  width: 300px;
+  display: flex;
+  margin-right: 0;
+  margin-left: 0;
+
+} */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-1 {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  padding: 5px;
+}

@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background-image: url(./img/background.jpg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 400px;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.circle {
+  width: 7px;
+  height: 7px;
+  background-color: #DEDEDE;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+
+.circle:first-child {
+  background-color: #AAAAAA;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  display: flex;
+  color: #B3AFAE;
+}
+
+.card-2 {
+  color: #000000;
+}
+
+.card-h1 {
+  text-align: center;
+}
+
+/* ******************card*******************8 */
+
+.card {
+  border-top: 2px solid #DEDEDE;
+  padding: 20px;
+}
+
+.card:hover {
+  background-color: rgb(233, 223, 223);
+}
+
+
+.card::before {
+  content: "";
+  width: 35px;
+  height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  background-size: contain;
+  margin-right: 30px;
+
+
+}
+
+.card:first-child::before {
+  background-image: url(./img/visa.svg);
+
+}
+
+.card:nth-child(2)::before {
+  background-image: url(./img/mastercard.svg);
+}
+
+.card:nth-child(2)::after {
+  content: "";
+  background-image: url(./img/check.svg);
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-left: auto;
+}
+
+.card:last-child::before {
+  background-image: url(./img/maestro.svg);
+}
+
+
+
+.futer {
+  background-color: #598BDD;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+
+
+}
+
+.futer:active {
+  transform: translateY(5px);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(./img/arrow.svg);
+  margin-left: 10px;
+}

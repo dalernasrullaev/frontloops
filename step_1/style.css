@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b09fcd;
+  ;
+}
+
+h2 {
+  margin-bottom: 35px;
+  color: #5572D6;
+}
+
+p {
+  /* width: 170px; */
+  margin-bottom: 15px;
+  color: #ADABAB;
+}
+
+
+.cards {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #fff;
+  padding: 50px 80px;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 50%);
+  width: 800px;
+
+}
+
+.card {
+  padding: 10px;
+  width: 400px;
+}
+
+span {
+  color: #5572D6;
+}
+
+.span-nomer {
+  font-size: x-large;
+  font-weight: 900;
+}
+
+
+/* **********before************* */
+
+.card::before {
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 35px;
+}
+
+.card:first-child::before {
+  background-image: url(./img/device.svg);
+  width: 64px;
+  height: 75px
+}
+
+.card:nth-child(2)::before {
+  background-image: url(./img/laptop.svg);
+  width: 64px;
+  height: 75px;
+}
+
+.card:last-child::before {
+  background-image: url(./img/monitor.svg);
+  width: 64px;
+  height: 75px;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: #eceff4;
+}
